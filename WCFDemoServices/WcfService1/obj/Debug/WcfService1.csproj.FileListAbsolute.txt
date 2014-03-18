@@ -9,3 +9,12 @@ C:\Users\Stephen\Desktop\Work\WCF Demo\WFCDemo\WCFDemoServices\WcfService1\bin\W
 C:\Users\Stephen\Desktop\Work\WCF Demo\WFCDemo\WCFDemoServices\WcfService1\obj\Debug\WcfService1.dll
 C:\Users\Stephen\Desktop\Work\WCF Demo\WFCDemo\WCFDemoServices\WcfService1\obj\Debug\WcfService1.pdb
 C:\Users\Stephen\Desktop\Work\WCF Demo\WFCDemo\WCFDemoServices\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
+D:\Projects\SOADemo\SOADemo\WCFDemoServices\WcfService1\bin\WcfService1.dll
+D:\Projects\SOADemo\SOADemo\WCFDemoServices\WcfService1\bin\WcfService1.pdb
+D:\Projects\SOADemo\SOADemo\WCFDemoServices\WcfService1\obj\Debug\WcfService1.dll
+D:\Projects\SOADemo\SOADemo\WCFDemoServices\WcfService1\obj\Debug\WcfService1.pdb
+D:\Projects\SOADemo\SOADemo\WCFDemoServices\WcfService1\bin\Newtonsoft.Json.dll
+D:\Projects\SOADemo\SOADemo\WCFDemoServices\WcfService1\bin\Newtonsoft.Json.pdb
+D:\Projects\SOADemo\SOADemo\WCFDemoServices\WcfService1\bin\Newtonsoft.Json.xml
+D:\Projects\SOADemo\SOADemo\WCFDemoServices\WcfService1\obj\Debug\WcfService1.Properties.Resources.resources
+D:\Projects\SOADemo\SOADemo\WCFDemoServices\WcfService1\obj\Debug\WcfService1.csproj.GenerateResource.Cache

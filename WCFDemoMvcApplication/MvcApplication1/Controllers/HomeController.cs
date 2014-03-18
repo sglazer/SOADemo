@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+
 namespace MvcApplication1.Controllers
 {
 	public class HomeController : Controller
@@ -11,6 +12,8 @@ namespace MvcApplication1.Controllers
 		public ActionResult Index()
 		{
 			ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+			ShawServices.FeaturedItemsClient client = new ShawServices.FeaturedItemsClient();
+			var items = client.GetAllItems("api.slice.dev.smdg.ca", "latest");
 
 			return View();
 		}
