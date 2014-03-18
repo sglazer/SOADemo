@@ -254,13 +254,13 @@
     <Content Include="Service References\ShawServices\MvcApplication1.ShawServices.FeaturedItems.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <None Include="Service References\ShawServices\Service1.disco" />
     <None Include="Service References\ShawServices\configuration91.svcinfo" />
     <None Include="Service References\ShawServices\configuration.svcinfo" />
     <None Include="Service References\ShawServices\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Service References\ShawServices\Service11.disco" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -300,19 +300,19 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
-    <None Include="Service References\ShawServices\Service1.xsd">
+    <None Include="Service References\ShawServices\Service14.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ShawServices\Service11.xsd">
+    <None Include="Service References\ShawServices\Service141.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ShawServices\Service12.xsd">
+    <None Include="Service References\ShawServices\Service142.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ShawServices\Service13.xsd">
+    <None Include="Service References\ShawServices\Service143.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ShawServices\ShawServices.wsdl" />
+    <Content Include="Service References\ShawServices\ShawServices1.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
