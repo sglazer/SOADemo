@@ -1,0 +1,11 @@
+D:\Projects\WFCDemo\WCFDemoServices\WcfService1\bin\WcfService1.dll
+D:\Projects\WFCDemo\WCFDemoServices\WcfService1\bin\WcfService1.pdb
+D:\Projects\WFCDemo\WCFDemoServices\WcfService1\obj\Debug\WcfService1.dll
+D:\Projects\WFCDemo\WCFDemoServices\WcfService1\obj\Debug\WcfService1.pdb
+D:\Projects\WFCDemo\WCFDemoServices\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
+C:\Users\Stephen\Desktop\Work\WCF Demo\WFCDemo\WCFDemoServices\WcfService1\bin\WcfService1.dll.config
+C:\Users\Stephen\Desktop\Work\WCF Demo\WFCDemo\WCFDemoServices\WcfService1\bin\WcfService1.dll
+C:\Users\Stephen\Desktop\Work\WCF Demo\WFCDemo\WCFDemoServices\WcfService1\bin\WcfService1.pdb
+C:\Users\Stephen\Desktop\Work\WCF Demo\WFCDemo\WCFDemoServices\WcfService1\obj\Debug\WcfService1.dll
+C:\Users\Stephen\Desktop\Work\WCF Demo\WFCDemo\WCFDemoServices\WcfService1\obj\Debug\WcfService1.pdb
+C:\Users\Stephen\Desktop\Work\WCF Demo\WFCDemo\WCFDemoServices\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
