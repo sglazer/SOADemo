@@ -145,3 +145,4 @@ D:\Projects\SOADemo\SOADemo\WCFDemoMvcApplication\MvcApplication1\bin\DotNetOpen
 D:\Projects\SOADemo\SOADemo\WCFDemoMvcApplication\MvcApplication1\bin\DotNetOpenAuth.OAuth.xml
 D:\Projects\SOADemo\SOADemo\WCFDemoMvcApplication\MvcApplication1\bin\DotNetOpenAuth.OpenId.xml
 D:\Projects\SOADemo\SOADemo\WCFDemoMvcApplication\MvcApplication1\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Projects\SOADemo\SOADemo\WCFDemoMvcApplication\MvcApplication1\obj\Debug\MvcApplication1.csprojResolveAssemblyReference.cache

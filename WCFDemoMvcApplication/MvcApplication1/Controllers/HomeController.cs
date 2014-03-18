@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MvcApplication1.Models;
 
 
 namespace MvcApplication1.Controllers
@@ -12,10 +13,11 @@ namespace MvcApplication1.Controllers
 		public ActionResult Index()
 		{
 			ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+			FeaturedItemsModel model = new FeaturedItemsModel();
 			ShawServices.FeaturedItemsClient client = new ShawServices.FeaturedItemsClient();
-			var items = client.GetAllItems("api.slice.dev.smdg.ca", "latest");
-
-			return View();
+			var items = client.GetItem("api.slice.dev.smdg.ca", "latest", "311");
+			model.EditorsPicks = items;
+			return View(model);
 		}
 
 		public ActionResult About()

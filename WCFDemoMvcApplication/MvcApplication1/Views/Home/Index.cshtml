@@ -1,4 +1,6 @@
-﻿@{
+﻿@model MvcApplication1.Models.FeaturedItemsModel
+
+@{
     ViewBag.Title = "Home Page";
 }
 @section featured {
@@ -43,3 +45,27 @@
         <a href="http://go.microsoft.com/fwlink/?LinkId=245157">Learn more…</a>
     </li>
 </ol>
+
+ <ul>
+        @if (Model.EditorsPicks.Items != null)
+        {
+            int count = 0;
+            foreach (var item in Model.EditorsPicks.Items)
+            {
+                count++;
+                
+                string itemURL = string.Empty;
+             
+                
+                <li class="featuredBlog-listItem">
+                    <div>
+                        <a href="@itemURL" title="@item.TitleLink.Text">
+                            <img src="@Html.FullImageUrl(item.ThumbnailURL)" alt="@item.TitleLink.Text" title="@item.TitleLink.Text" class="lazy" />
+                            <p class="category">@item.Description</p>
+                        </a>
+                        <h3><a href="@itemURL" title="@item.TitleLink.Text">@item.TitleLink.Text</a></h3>
+                    </div>
+                </li>            
+            }
+        }
+    </ul>
