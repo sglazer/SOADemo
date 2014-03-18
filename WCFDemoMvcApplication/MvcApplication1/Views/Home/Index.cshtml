@@ -11,38 +11,23 @@
                 <h2>@ViewBag.Message</h2>
             </hgroup>
             <p>
-                To learn more about ASP.NET MVC visit
-                <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
-                The page features <mark>videos, tutorials, and samples</mark> to help you get the most from ASP.NET MVC.
-                If you have any questions about ASP.NET MVC visit
-                <a href="http://forums.asp.net/1146.aspx/1?MVC" title="ASP.NET MVC Forum">our forums</a>.
+                To learn more about the code please visit 
+                <a href="https://github.com/sglazer/SOADemo.git" title="ASP.NET MVC Website">The Git Hub Repo</a>
             </p>
         </div>
     </section>
 }
-<h3>We suggest the following:</h3>
+
 <ol class="round">
     <li class="one">
-        <h5>Getting Started</h5>
-        ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-        enables a clean separation of concerns and that gives you full control over markup
-        for enjoyable, agile development. ASP.NET MVC includes many features that enable
-        fast, TDD-friendly development for creating sophisticated applications that use
-        the latest web standards.
-        <a href="http://go.microsoft.com/fwlink/?LinkId=245151">Learn more…</a>
-    </li>
+        <h5>Featured Item Widget</h5>
+        The list below is utilizing the existing featured items widget of the common platform. Specifically:<br>
+        1) API Url: api.slice.dev.smdg.ca <br>
+        2) Version: latest <br>
+        3) Endpoint Url: api.slice.dev.smdg.ca/latest/featureditems/311 <br>
 
-    <li class="two">
-        <h5>Add NuGet packages and jump-start your coding</h5>
-        NuGet makes it easy to install and update free libraries and tools.
-        <a href="http://go.microsoft.com/fwlink/?LinkId=245153">Learn more…</a>
-    </li>
 
-    <li class="three">
-        <h5>Find Web Hosting</h5>
-        You can easily find a web hosting company that offers the right mix of features
-        and price for your applications.
-        <a href="http://go.microsoft.com/fwlink/?LinkId=245157">Learn more…</a>
+        
     </li>
 </ol>
 
@@ -52,20 +37,32 @@
             int count = 0;
             foreach (var item in Model.EditorsPicks.Items)
             {
-                count++;
-                
-                string itemURL = string.Empty;
-             
-                
+               
                 <li class="featuredBlog-listItem">
                     <div>
-                        <a href="@itemURL" title="@item.TitleLink.Text">
+                        <a href="@item.TitleLink.Href" title="@item.TitleLink.Text">
                             <img src="@Html.FullImageUrl(item.ThumbnailURL)" alt="@item.TitleLink.Text" title="@item.TitleLink.Text" class="lazy" />
-                            <p class="category">@item.Description</p>
+                            
                         </a>
-                        <h3><a href="@itemURL" title="@item.TitleLink.Text">@item.TitleLink.Text</a></h3>
+                        <h3><a href="@item.TitleLink.Href" title="@item.TitleLink.Text">@item.TitleLink.Text</a></h3>
                     </div>
                 </li>            
             }
         }
     </ul>
+
+    <style type="text/css">
+        .featuredBlog-listItem h3 a {
+            color: #404040;
+            font-family: "proxima-nova-n7","proxima-nova",sans-serif;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        menu, ol, ul {
+            list-style: none outside none;
+             padding: 0 0 0 40px;
+        }
+
+
+    </style>
