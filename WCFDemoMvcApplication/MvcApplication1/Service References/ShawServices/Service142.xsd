@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfService1" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfService1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://shawservices.dev.smdg.ca/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ArrayOfFeaturedItems">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FeaturedItems" nillable="true" type="tns:FeaturedItems" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFeaturedItems" nillable="true" type="tns:ArrayOfFeaturedItems" />
+  <xs:complexType name="FeaturedItems">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Items" nillable="true" type="tns:ArrayOfFeaturedItem" />
+      <xs:element minOccurs="0" name="Links" nillable="true" type="tns:ArrayOfShawHyperLink" />
+      <xs:element minOccurs="0" name="TitleLink" nillable="true" type="tns:ShawHyperLink" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ViewTypes" nillable="true" type="q1:ArrayOfstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FeaturedItems" nillable="true" type="tns:FeaturedItems" />
+  <xs:complexType name="ArrayOfFeaturedItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FeaturedItem" nillable="true" type="tns:FeaturedItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFeaturedItem" nillable="true" type="tns:ArrayOfFeaturedItem" />
+  <xs:complexType name="FeaturedItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CallToActions" nillable="true" type="tns:ArrayOfShawHyperLink" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EndDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ThumbnailURL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TitleLink" nillable="true" type="tns:ShawHyperLink" />
+      <xs:element minOccurs="0" name="ViewType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FeaturedItem" nillable="true" type="tns:FeaturedItem" />
+  <xs:complexType name="ArrayOfShawHyperLink">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ShawHyperLink" nillable="true" type="tns:ShawHyperLink" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfShawHyperLink" nillable="true" type="tns:ArrayOfShawHyperLink" />
+  <xs:complexType name="ShawHyperLink">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Href" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ShawHyperLink" nillable="true" type="tns:ShawHyperLink" />
+</xs:schema>
